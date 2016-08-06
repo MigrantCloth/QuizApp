@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name ="colorPrimary">#F44336</item>
+        <item name ="colorPrimaryDark">#D32F2F</item>
+        <item name ="colorAccent">#FFC107</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-black</item>
+    </style>
+
+    <style name="USMC" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="header" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFC107</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <string name="Title">Green Monster Quiz</string>
+
+    <string name="Question_1">1. Where was the US Marine Corps formed?</string>
+        <string name="DC">Washington, DC</string>
+        <string name="PI">Parris Island</string>
+        <string name="TT">Tun Tavern</string>
+    <string name="Question_2">2. Who was the 1st Commandant of the Marine Corps?</string>
+        <string name="Smedley">Smedley Butler</string>
+        <string name="Samuel">Samuel Nicholas</string>
+        <string name="Chesty">Chesty Puller</string>
+    <string name="Question_3">3. When was the 1st Sergeant Major of the Marine Corps appointed?</string>
+        <string name="SGTMAJ1">1957</string>
+        <string name="SGTMAJ2">1918</string>
+        <string name="SGTMAJ3">1945</string>
+    <string name="Question_4">4. Where are the Recruit Depots for Marine Corps bootcamp?</string>
+        <string name="SD">San Diego</string>
+    <string name="Question_5">5. What is the Marine Corps motto?</string>
+        <string name="Enter">Enter answer</string>
+
+    <string name="Submit">Submit</string>
+    <string name="Reset">Reset</string>
+
+</resources>
