@@ -13,28 +13,31 @@ import org.w3c.dom.Text;
 public class MainActivity extends AppCompatActivity {
     int myScore = 0;
 
+    // Correct answer for birthplace of Marines
+    RadioButton tunTavernRb = (RadioButton) findViewById(R.id.radio_TT);
+    boolean isTT = tunTavernRb.isChecked();
+    // Correct answer for 1st Commandant of the Marine Corps
+    RadioButton samuelNicholasRb = (RadioButton) findViewById(R.id.radio_Samuel);
+    boolean isSN = samuelNicholasRb.isChecked();
+    // Correct answer for 1st SGTMAJ of the Marine Corps
+    RadioButton sgtMajRb = (RadioButton) findViewById(R.id.radio_1957);
+    boolean is1957 = sgtMajRb.isChecked();
+    // Correct answer #1 for bootcamp
+    CheckBox mcrdpiCheckBox = (CheckBox) findViewById(R.id.Parris_Island & R.id.San_Diego);
+    boolean isMCRDPI = mcrdpiCheckBox.isChecked();
+    // Correct answer #2 for bootcamp
+    CheckBox mcrdsdCheckBox = (CheckBox) findViewById(R.id.San_Diego);
+    boolean isMCRDSD = mcrdsdCheckBox.isChecked();
+    // Correct answer for enter text
+    EditText enterMotto = (EditText)findViewById(R.id.enter_text);
+    String motto =  enterMotto.getText().toString();
+
+    /**
     public void submitQuiz(View view) {
 
-        // Correct answer for birthplace of Marines
-        RadioButton tunTavernRb = (RadioButton) findViewById(R.id.radio_TT);
-        boolean isTT = tunTavernRb.isChecked();
-        // Correct answer for 1st Commandant of the Marine Corps
-        RadioButton samuelNicholasRb = (RadioButton) findViewById(R.id.radio_Samuel);
-        boolean isSN = samuelNicholasRb.isChecked();
-        // Correct answer for 1st SGTMAJ of the Marine Corps
-        RadioButton sgtMajRb = (RadioButton) findViewById(R.id.radio_1957);
-        boolean is1957 = sgtMajRb.isChecked();
-        // Correct answer #1 for bootcamp
-        CheckBox mcrdpiCheckBox = (CheckBox) findViewById(R.id.Parris_Island & R.id.San_Diego);
-        boolean isMCRDPI = mcrdpiCheckBox.isChecked();
-        // Correct answer #2 for bootcamp
-        CheckBox mcrdsdCheckBox = (CheckBox) findViewById(R.id.San_Diego);
-        boolean isMCRDSD = mcrdsdCheckBox.isChecked();
-        // Correct answer for enter text
-        EditText enterMotto = (EditText)findViewById(R.id.enter_text);
-        String motto =  enterMotto.getText().toString();
-           }
 
+           }
+*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,14 +65,12 @@ public class MainActivity extends AppCompatActivity {
         } else {
             myScore = myScore + 0;
         }
-        /**
-        String enterText = editText.getText().toString();
-        if(enterText.equals("Semper Fidelis")) {
+
+        if(motto.equals("Semper Fidelis")) {
             myScore = myScore + 1;
         }    else {
             myScore = myScore + 0;
         }
-        */
         return myScore;
     }
     //reset the quiz
@@ -79,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         }
     /** get EditText by id /**
         EditText editText = (EditText) findViewById(R.id.enter_text);
+        String enterText = editText.getText().toString();
     */
 
     }
