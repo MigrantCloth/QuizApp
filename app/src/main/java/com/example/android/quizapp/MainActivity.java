@@ -8,6 +8,8 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 public class MainActivity extends AppCompatActivity {
     int myScore = 0;
 
@@ -23,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         RadioButton sgtMajRb = (RadioButton) findViewById(R.id.radio_1957);
         boolean is1957 = sgtMajRb.isChecked();
         // Correct answer #1 for bootcamp
-        CheckBox mcrdpiCheckBox = (CheckBox) findViewById(R.id.Parris_Island + R.id.San_Diego);
+        CheckBox mcrdpiCheckBox = (CheckBox) findViewById(R.id.Parris_Island & R.id.San_Diego);
         boolean isMCRDPI = mcrdpiCheckBox.isChecked();
         // Correct answer #2 for bootcamp
         CheckBox mcrdsdCheckBox = (CheckBox) findViewById(R.id.San_Diego);
@@ -31,9 +33,13 @@ public class MainActivity extends AppCompatActivity {
         // Correct answer for enter text
         EditText enterMotto = (EditText)findViewById(R.id.enter_text);
         String motto =  enterMotto.getText().toString();
-
-
            }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
 
     private int totalScore(boolean isTT, boolean isSN, boolean is1957,boolean isMCRDPI, boolean isMCRDSD) {
         if(isTT){
@@ -56,23 +62,24 @@ public class MainActivity extends AppCompatActivity {
         } else {
             myScore = myScore + 0;
         }
-        if (motto){
-
+        /**
+        String enterText = editText.getText().toString();
+        if(enterText.equals("Semper Fidelis")) {
+            myScore = myScore + 1;
+        }    else {
+            myScore = myScore + 0;
         }
-
+        */
         return myScore;
-
     }
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
+    //reset the quiz
       public void reset (View view) {
         myScore = 0;
 
         }
+    /** get EditText by id /**
+        EditText editText = (EditText) findViewById(R.id.enter_text);
+    */
 
     }
 
