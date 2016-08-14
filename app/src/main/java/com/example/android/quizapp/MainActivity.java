@@ -1,17 +1,26 @@
 package com.example.android.quizapp;
 
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+import java.security.acl.Group;
+
 public class MainActivity extends AppCompatActivity {
-    int myScore = 0;
+    private int myScore = 0;
+    private String enterMotto = "Semper Fidelis";
+    private CheckBox mcrdpiCheckBox;
+    private CheckBox mcrdsdCheckBox;
+
+    public void submitQuiz(View view) {
 
     // Correct answer for birthplace of Marines
     RadioButton tunTavernRb = (RadioButton) findViewById(R.id.radio_TT);
@@ -30,14 +39,14 @@ public class MainActivity extends AppCompatActivity {
     boolean isMCRDSD = mcrdsdCheckBox.isChecked();
     // Correct answer for enter text
     EditText enterMotto = (EditText)findViewById(R.id.enter_text);
-    String motto =  enterMotto.getText().toString();
+    String motto = enterMotto.getText().toString().trim();
 
-    /**
-    public void submitQuiz(View view) {
+    myScore = totalScore(isTT, isSN, is1957, isMCRDPI, isMCRDSD);
+        Toast.makeText(getApplicationContext(), "Congratulations! Your score is: " + myScore + " / 5",
+                Toast.LENGTH_LONG).show();
 
+    }
 
-           }
-*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,8 +74,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             myScore = myScore + 0;
         }
-
-        if(motto.equals("Semper Fidelis")) {
+        if(enterMotto.equals("Semper Fidelis")) {
             myScore = myScore + 1;
         }    else {
             myScore = myScore + 0;
@@ -75,13 +83,15 @@ public class MainActivity extends AppCompatActivity {
     }
     //reset the quiz
       public void reset (View view) {
-        myScore = 0;
 
-        }
-    /** get EditText by id /**
-        EditText editText = (EditText) findViewById(R.id.enter_text);
-        String enterText = editText.getText().toString();
-    */
+          ((RadioGroup) findViewById(R.id.radio_group_1)).clearCheck();
+          ((RadioGroup) findViewById(R.id.radio_group_2)).clearCheck();
+          ((RadioGroup) findViewById(R.id.radio_group_3)).clearCheck();
+          ((CheckBox) findViewById(R.id.San_Diego)).setChecked(false);
+          ((CheckBox) findViewById(R.id.Washington_DC)).setChecked(false);
+          ((CheckBox) findViewById(R.id.Parris_Island)).setChecked(false);
+
+      }
 
     }
 
