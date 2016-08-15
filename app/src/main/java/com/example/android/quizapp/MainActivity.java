@@ -90,6 +90,10 @@ public class MainActivity extends AppCompatActivity {
           ((CheckBox) findViewById(R.id.San_Diego)).setChecked(false);
           ((CheckBox) findViewById(R.id.Washington_DC)).setChecked(false);
           ((CheckBox) findViewById(R.id.Parris_Island)).setChecked(false);
+          ((EditText) findViewById(R.id.enter_text)).setText("");
+
+          Toast.makeText(getApplicationContext(), "Quiz has been reset.",
+                  Toast.LENGTH_LONG).show();
 
       }
 
