@@ -1,3 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\uzuri17\AndroidStudioProjects\QuizApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\uzuri17\AndroidStudioProjects\QuizApp\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_8feef8e91fbb1142afccc50c1911e8ae079c4aa3.jar" />
+    </item>
+    <item
+        jar="C:\Users\uzuri17\AndroidStudioProjects\QuizApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\uzuri17\AndroidStudioProjects\QuizApp\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_f4896cc48ff2d443cfebafcb71bc4f8e34eb7fe4.jar" />
+    </item>
+    <item
+        jar="C:\Users\uzuri17\AndroidStudioProjects\QuizApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="476046d58eba243baae1ea8c00ec857884bf48ad">
+        <dex dex="C:\Users\uzuri17\AndroidStudioProjects\QuizApp\app\build\intermediates\pre-dexed\debug\instant-run_8b06b8de423e5cefb0d095db0f9def0872c81210.jar" />
+    </item>
+    <item
+        jar="C:\Users\uzuri17\AndroidStudioProjects\QuizApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\uzuri17\AndroidStudioProjects\QuizApp\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_05e33fb7f1e61254193c992eeeb1d3f6dbdca685.jar" />
+    </item>
+    <item
+        jar="C:\Users\uzuri17\AndroidStudioProjects\QuizApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\uzuri17\AndroidStudioProjects\QuizApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_778bfd13d5e17385564366ca30ab9d7acdcd5738.jar" />
+    </item>
+    <item
+        jar="C:\Users\uzuri17\AndroidStudioProjects\QuizApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\uzuri17\AndroidStudioProjects\QuizApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_0445146c8807750e704c52b9c73564ca9863b98a.jar" />
+    </item>
+    <item
+        jar="C:\Users\uzuri17\AndroidStudioProjects\QuizApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="98b24987fc53c73d4b04e9827a1f1128a6c529b6">
+        <dex dex="C:\Users\uzuri17\AndroidStudioProjects\QuizApp\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_2356138baba972e4b069ae325b21999c0a4934b0.jar" />
+    </item>
+    <item
+        jar="C:\Users\uzuri17\AppData\Local\Android\sdk2\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\uzuri17\AndroidStudioProjects\QuizApp\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_bff9293f13824c495798ed768eaf04ee3a897ef0.jar" />
+    </item>
+
+</items>

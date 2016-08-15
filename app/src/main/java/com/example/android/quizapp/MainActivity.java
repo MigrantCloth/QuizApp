@@ -16,7 +16,6 @@ import java.security.acl.Group;
 
 public class MainActivity extends AppCompatActivity {
     private int myScore = 0;
-    private String enterMotto = "Semper Fidelis";
     private CheckBox mcrdpiCheckBox;
     private CheckBox mcrdsdCheckBox;
 
@@ -38,11 +37,10 @@ public class MainActivity extends AppCompatActivity {
     CheckBox mcrdsdCheckBox = (CheckBox) findViewById(R.id.San_Diego);
     boolean isMCRDSD = mcrdsdCheckBox.isChecked();
     // Correct answer for enter text
-    EditText enterMotto = (EditText)findViewById(R.id.enter_text);
-    String motto = enterMotto.getText().toString().trim();
-
-    myScore = totalScore(isTT, isSN, is1957, isMCRDPI, isMCRDSD);
-        Toast.makeText(getApplicationContext(), "Congratulations! Your score is: " + myScore + " / 5",
+    EditText enterText = (EditText) findViewById(R.id.enter_text);
+    String enterMotto = enterText.getText().toString();
+    myScore = totalScore(isTT, isSN, is1957, isMCRDPI, isMCRDSD, enterMotto);
+        Toast.makeText(getApplicationContext(), "Your score is: " + myScore + " / 5",
                 Toast.LENGTH_LONG).show();
 
     }
@@ -53,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    private int totalScore(boolean isTT, boolean isSN, boolean is1957,boolean isMCRDPI, boolean isMCRDSD) {
+    private int totalScore(boolean isTT, boolean isSN, boolean is1957,boolean isMCRDPI, boolean isMCRDSD, String enterMotto) {
         if(isTT){
             myScore = myScore +1;
         } else {
@@ -79,8 +77,10 @@ public class MainActivity extends AppCompatActivity {
         }    else {
             myScore = myScore + 0;
         }
+
         return myScore;
     }
+
     //reset the quiz
       public void reset (View view) {
 
@@ -94,6 +94,8 @@ public class MainActivity extends AppCompatActivity {
 
           Toast.makeText(getApplicationContext(), "Quiz has been reset.",
                   Toast.LENGTH_LONG).show();
+
+          myScore = 0;
 
       }
 
